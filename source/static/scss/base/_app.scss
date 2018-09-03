@@ -1,0 +1,168 @@
+html {
+  font-size: 10px;
+}
+
+#appBody {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+  height:100%;
+}
+#root{
+    height: 100%;
+}
+.App {
+  font-size: 1.8rem;
+  height: 100%;
+}
+.container{
+    padding:80px 0;
+}
+.header{
+    width: 100%;
+    background: #25ce74;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    z-index: 100;
+    padding-left: 20px;
+    text-align: center;
+}
+.studentRow{
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    background: white;
+    margin: 1%;
+    border-radius: 4px;
+    border: 1px solid #d4dee5;
+    padding: 10px;
+    &:hover{
+        transform: translateY(-1px);
+        box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    .rowCommon{
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+}
+.studentDetails{
+    width: 90%;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #d4dee5;
+    padding: 10px;
+    min-height: 500px;
+    margin:0 auto;
+    &:hover{
+        transform: translateY(-1px);
+        box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+    }
+    p{
+        margin: 15px;
+        font-size: 20px;
+        line-height: 1.1;
+    }
+}
+.icons{
+    font-size:20px !important;
+    vertical-align:bottom;
+    margin-right:5px;
+}
+.searchBar{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    font-size: 18px;
+    input{
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        width: 90%;
+    }
+}
+.sortBar{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    p{
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-top: 7px;
+    }
+    .col{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        background: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        .main{
+            display: inline-block;
+            cursor: pointer;
+        }
+        .active{
+            color:#1975d2;
+        }
+    }
+}
+.no-result{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.light{
+    font-weight:300;
+}
+@media (min-width: 320px) and (max-width: 640px){
+    .studentRow{
+        width: 99%;
+    }
+    .searchBar{
+        width: 200px;
+        margin-left: 10px;
+        font-size: 16px;
+        input{
+            width: 85%;
+        }
+    }
+    .sortBar{
+        margin-left: 10px;
+        margin-top: 10px;
+        p{
+            margin-right: 10px;
+        }
+        .col{
+            font-size: 12px;
+        }
+    }
+}
+@media (min-width: 640px) and (max-width: 1040px){
+    .studentRow{
+        width: 48%;
+    }
+    .searchBar{
+        width: 220px;
+        margin-left: 20px;
+        input{
+            width: 85%;
+        }
+    }
+}
+@media (min-width: 1040px){
+    .studentRow{
+        &:hover{
+            transform: translateY(-1px);
+            box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+        }
+    }
+}
